@@ -23,12 +23,12 @@ export default {
                 items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
 
             },
-            // {
-            //     slug: 'Top rated',
-            //     title: 'Em alta',
-            //     items: await basicFetch(`/movie/top-rated?language=pt-BR&api_key=${API_KEY}`)
+            {
+                slug: 'toprated',
+                 title: 'Em alta',
+                items: await basicFetch(`/movie/top_rated?language=pt-BR&api_key=${API_KEY}`)
 
-            // },
+            },
             {
                 slug: 'action',
                 title: 'Ação',
